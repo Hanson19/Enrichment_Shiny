@@ -59,18 +59,18 @@ ui <- page_sidebar(
        selected = "all"
      )
    ),
-    page_fillable(
-      layout_columns(
-        card(plotOutput("Dendrogram")),
-        card(plotOutput("Rep_Curves")),
-        card(tableOutput("Enriched_Terms")),
-        col_widths = c(12,12,12),
-        row_heights = c(0.5,0.5,0.50)
-      )
-    )
-   # card(plotOutput("Dendrogram")),
-   # card(plotOutput("Rep_Curves")),
-   # card(tableOutput("Enriched_Terms"))
+   # page_fillable(
+    #  layout_columns(
+     #   card(plotOutput("Dendrogram")),
+      #  card(plotOutput("Rep_Curves")),
+       # card(tableOutput("Enriched_Terms")),
+        #col_widths = c(12,12,12),
+        #row_heights = c(0.5,0.5,0.50)
+      #)
+    #)
+    card(plotOutput("Dendrogram")),
+    card(plotOutput("Rep_Curves")),
+    card(tableOutput("Enriched_Terms"))
 )
 
 server <- function(input, output){
