@@ -235,7 +235,7 @@ server <- function(input, output){
     data_table
   })
   
-  output$Enriched_Terms <- renderDT(data_table_react(), options=list(pageLength=5))
+  output$Enriched_Terms <- renderDT(data_table_react(), options=list(pageLength=10))
   
 }
 
